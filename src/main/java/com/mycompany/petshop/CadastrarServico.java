@@ -57,7 +57,7 @@ public class CadastrarServico extends javax.swing.JInternalFrame {
         txtPreco.setModel(new javax.swing.SpinnerNumberModel(0.1f, 0.1f, null, 1.0f));
 
         lblTempoEstimdo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblTempoEstimdo.setText("Tempo estimado (em minutos:");
+        lblTempoEstimdo.setText("Tempo estimado (em minutos):");
 
         lblTempoEstimado.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
 

@@ -5,6 +5,7 @@
 package com.mycompany.petshop.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -16,6 +17,7 @@ public class Persistencia {
     private static ArrayList<Servico> listaServicos = new ArrayList<Servico>();
     private static ArrayList<Produto> listaProdutos = new ArrayList<Produto>();
     private static ArrayList<Pet> listaPets = new ArrayList<Pet>();
+    private static ArrayList<Agendamento> listaAgendamentos = new ArrayList<Agendamento>();
 
     // Usuários
     static {
@@ -61,6 +63,16 @@ public class Persistencia {
         return null;
     }
 
+    // Buscar Usuário por ID
+    public static Usuario getUsuarioPorId(int id) {
+        for (Usuario u : listaUsuarios) {
+            if (u.getId() == id) {
+                return u;
+            }
+        }
+        return null; // Não encontrado
+    }
+
     // Serviços
     public static void cadastrarServico(Servico s) {
         if (s != null) {
@@ -101,5 +113,44 @@ public class Persistencia {
             }
         }
         return null;
+    }
+
+    // Buscar Pet por ID
+    public static Pet getPetPorId(int id) {
+        for (Pet p : listaPets) {
+            if (p.getId() == id) {
+                return p;
+            }
+        }
+        return null; // Não encontrado
+    }
+
+    // Agendamentos
+    public static ArrayList<Agendamento> getAgendamentos() {
+        return listaAgendamentos;
+    }
+
+    public static boolean temConflito(Date inicio, int duracaoMinutos) {
+        long inicioMillis = inicio.getTime();
+        long fimMillis = inicioMillis + (duracaoMinutos * 60 * 1000);
+
+        for (Agendamento a : listaAgendamentos) {
+            long agendamentoInicio = a.getDataHora().getTime();
+            long agendamentoFim = a.getFimAgendamento().getTime();
+
+            // Conflito: início < fim de agendamento existente E fim > início de agendamento existente
+            if (inicioMillis < agendamentoFim && fimMillis > agendamentoInicio) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean cadastrarAgendamento(Agendamento agendamento) {
+        if (!temConflito(agendamento.getDataHora(), agendamento.getTempoTotal())) {
+            listaAgendamentos.add(agendamento);
+            return true;
+        }
+        return false; // Conflito encontrado, não cadastra
     }
 }

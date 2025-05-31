@@ -33,6 +33,7 @@ public class Home extends javax.swing.JFrame {
             menuItemCadastrarServico.setVisible(false);
             menuItemCadastrarProduto.setVisible(false);
             menuItemListarTodosPets.setVisible(false);
+            menuItemListarTodosAgendamentos.setVisible(false);
         }
     }
 
@@ -60,10 +61,14 @@ public class Home extends javax.swing.JFrame {
         menuItemCadastrarPet = new javax.swing.JMenuItem();
         menuItemListarMeusPets = new javax.swing.JMenuItem();
         menuItemListarTodosPets = new javax.swing.JMenuItem();
+        menuAgendamentos = new javax.swing.JMenu();
+        menuItemCadastrarAgendamento = new javax.swing.JMenuItem();
+        menuItemListarMeusAgendamentos = new javax.swing.JMenuItem();
+        menuItemListarTodosAgendamentos = new javax.swing.JMenuItem();
         menuProdutos = new javax.swing.JMenu();
         menuItemCadastrarProduto = new javax.swing.JMenuItem();
         menuItemListarProdutos = new javax.swing.JMenuItem();
-        menuProdutos1 = new javax.swing.JMenu();
+        LogOut = new javax.swing.JMenu();
         menuItemLogOut = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -176,6 +181,37 @@ public class Home extends javax.swing.JFrame {
 
         menu.add(menuPets);
 
+        menuAgendamentos.setText("Agendamentos");
+
+        menuItemCadastrarAgendamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add_plus_new_icon.png"))); // NOI18N
+        menuItemCadastrarAgendamento.setText("Cadastrar ");
+        menuItemCadastrarAgendamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemCadastrarAgendamentoActionPerformed(evt);
+            }
+        });
+        menuAgendamentos.add(menuItemCadastrarAgendamento);
+
+        menuItemListarMeusAgendamentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-listar-cliente.png"))); // NOI18N
+        menuItemListarMeusAgendamentos.setText("Listar Meus Agendamentos");
+        menuItemListarMeusAgendamentos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemListarMeusAgendamentosActionPerformed(evt);
+            }
+        });
+        menuAgendamentos.add(menuItemListarMeusAgendamentos);
+
+        menuItemListarTodosAgendamentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-listar-cliente.png"))); // NOI18N
+        menuItemListarTodosAgendamentos.setText("Listar Todos Agendamentos");
+        menuItemListarTodosAgendamentos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemListarTodosAgendamentosActionPerformed(evt);
+            }
+        });
+        menuAgendamentos.add(menuItemListarTodosAgendamentos);
+
+        menu.add(menuAgendamentos);
+
         menuProdutos.setText("Produtos");
 
         menuItemCadastrarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add_plus_new_icon.png"))); // NOI18N
@@ -198,7 +234,7 @@ public class Home extends javax.swing.JFrame {
 
         menu.add(menuProdutos);
 
-        menuProdutos1.setText("Log Out");
+        LogOut.setText("Log Out");
 
         menuItemLogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon-logout.png"))); // NOI18N
         menuItemLogOut.setText("Sair");
@@ -207,9 +243,9 @@ public class Home extends javax.swing.JFrame {
                 menuItemLogOutActionPerformed(evt);
             }
         });
-        menuProdutos1.add(menuItemLogOut);
+        LogOut.add(menuItemLogOut);
 
-        menu.add(menuProdutos1);
+        menu.add(LogOut);
 
         setJMenuBar(menu);
 
@@ -291,6 +327,24 @@ public class Home extends javax.swing.JFrame {
         telaListarTodosPets.setVisible(true);
     }//GEN-LAST:event_menuItemListarTodosPetsActionPerformed
 
+    private void menuItemCadastrarAgendamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemCadastrarAgendamentoActionPerformed
+        CadastrarAgendamento telaCadastrarAgendamento = new CadastrarAgendamento(usuarioLogado);
+        jDesktopPane.add(telaCadastrarAgendamento);
+        telaCadastrarAgendamento.setVisible(true);
+    }//GEN-LAST:event_menuItemCadastrarAgendamentoActionPerformed
+
+    private void menuItemListarMeusAgendamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemListarMeusAgendamentosActionPerformed
+        ListarMeusAgendamentos telaListarMeusAgendamentos = new ListarMeusAgendamentos(usuarioLogado);
+        jDesktopPane.add(telaListarMeusAgendamentos);
+        telaListarMeusAgendamentos.setVisible(true);
+    }//GEN-LAST:event_menuItemListarMeusAgendamentosActionPerformed
+
+    private void menuItemListarTodosAgendamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemListarTodosAgendamentosActionPerformed
+        ListarTodosAgendamentos telaListarTodosAgendamentos = new ListarTodosAgendamentos();
+        jDesktopPane.add(telaListarTodosAgendamentos);
+        telaListarTodosAgendamentos.setVisible(true);
+    }//GEN-LAST:event_menuItemListarTodosAgendamentosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -328,25 +382,29 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu LogOut;
     private javax.swing.JMenu Perfil;
     private javax.swing.JDesktopPane jDesktopPane;
     private javax.swing.JLabel lblTituloPagina;
     private javax.swing.JMenuBar menu;
+    private javax.swing.JMenu menuAgendamentos;
     private javax.swing.JMenu menuClientes;
     private javax.swing.JMenuItem menuItemAlterarPerfil;
+    private javax.swing.JMenuItem menuItemCadastrarAgendamento;
     private javax.swing.JMenuItem menuItemCadastrarPet;
     private javax.swing.JMenuItem menuItemCadastrarProduto;
     private javax.swing.JMenuItem menuItemCadastrarServico;
     private javax.swing.JMenuItem menuItemListarClientes;
+    private javax.swing.JMenuItem menuItemListarMeusAgendamentos;
     private javax.swing.JMenuItem menuItemListarMeusPets;
     private javax.swing.JMenuItem menuItemListarProdutos;
     private javax.swing.JMenuItem menuItemListarServicos;
+    private javax.swing.JMenuItem menuItemListarTodosAgendamentos;
     private javax.swing.JMenuItem menuItemListarTodosPets;
     private javax.swing.JMenuItem menuItemLogOut;
     private javax.swing.JMenuItem menuItemVisualizarPerfil;
     private javax.swing.JMenu menuPets;
     private javax.swing.JMenu menuProdutos;
-    private javax.swing.JMenu menuProdutos1;
     private javax.swing.JMenu menuServicos;
     // End of variables declaration//GEN-END:variables
 }

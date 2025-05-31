@@ -9,7 +9,7 @@ package com.mycompany.petshop.model;
  * @author dti
  */
 public class Pet {
-    private static int contadorId = 1;
+    private static int proximoId = 1;
 
     private int id;
     private int usuarioId;
@@ -20,7 +20,7 @@ public class Pet {
     private String observacoes;
 
     public Pet(int usuarioId, String nome, String porte, String idade, String raca, String observacoes) {
-        this.id = contadorId++;
+        this.id = proximoId++;
         this.usuarioId = usuarioId;
         this.nome = nome;
         this.porte = porte;
@@ -29,14 +29,14 @@ public class Pet {
         this.observacoes = observacoes;
     }
 
-    public static int getContadorId() {
-        return contadorId;
+    public static int getProximoId() {
+        return proximoId;
     }
 
-    public static void setContadorId(int contadorId) {
-        Pet.contadorId = contadorId;
+    public static void setProximoId(int proximoId) {
+        Pet.proximoId = proximoId;
     }
-
+    
     public int getId() {
         return id;
     }
