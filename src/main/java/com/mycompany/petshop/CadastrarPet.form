@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="cc" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="lblTituloPagina" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblNome" pref="131" max="32767" attributes="0"/>
+                      <Component id="lblPorte" max="32767" attributes="0"/>
+                      <Component id="lblIdade" alignment="1" max="32767" attributes="0"/>
+                      <Component id="lblRaca" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblObservacoes" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="btnFechar" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="txtPorte" max="32767" attributes="0"/>
+                      <Component id="txtNome" max="32767" attributes="0"/>
+                      <Component id="txtIdade" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtRaca" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="348" max="32767" attributes="0"/>
+                      <Component id="btEnviar" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="lblTituloPagina" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtPorte" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblPorte" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblIdade" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtIdade" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblRaca" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtRaca" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblObservacoes" min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="104" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="59" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnFechar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btEnviar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lblTituloPagina">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Cadastrar Pet"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNome">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nome do Pet:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtNome">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblPorte">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Porte:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="txtPorte">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="Pequeno"/>
+                <StringItem index="1" value="M&#xe9;dio"/>
+                <StringItem index="2" value="Grande"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPorteActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblIdade">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Idade:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="txtIdade">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Filhote"/>
+                <StringItem index="1" value="Jovem"/>
+                <StringItem index="2" value="Adulto"/>
+                <StringItem index="3" value="Idoso"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtIdadeActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblRaca">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ra&#xe7;a:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="txtRaca">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="209">
+                <StringItem index="0" value="Beagle"/>
+                <StringItem index="1" value="Poodle"/>
+                <StringItem index="2" value="Bulldog Franc&#xea;s"/>
+                <StringItem index="3" value="Bulldog Ingl&#xea;s"/>
+                <StringItem index="4" value="Golden Retriever"/>
+                <StringItem index="5" value="Labrador Retriever"/>
+                <StringItem index="6" value="Pastor Alem&#xe3;o"/>
+                <StringItem index="7" value="Rottweiler"/>
+                <StringItem index="8" value="Doberman"/>
+                <StringItem index="9" value="D&#xe1;lmata"/>
+                <StringItem index="10" value="Chihuahua"/>
+                <StringItem index="11" value="Yorkshire Terrier"/>
+                <StringItem index="12" value="Shih Tzu"/>
+                <StringItem index="13" value="Lhasa Apso"/>
+                <StringItem index="14" value="Malt&#xea;s"/>
+                <StringItem index="15" value="Pinscher"/>
+                <StringItem index="16" value="Pug"/>
+                <StringItem index="17" value="Buldogue Americano"/>
+                <StringItem index="18" value="Boxer"/>
+                <StringItem index="19" value="Akita Inu"/>
+                <StringItem index="20" value="Husky Siberiano"/>
+                <StringItem index="21" value="Samoyeda"/>
+                <StringItem index="22" value="Spitz Alem&#xe3;o (Lulu da Pomer&#xe2;nia)"/>
+                <StringItem index="23" value="Pastor de Shetland"/>
+                <StringItem index="24" value="Border Collie"/>
+                <StringItem index="25" value="Cocker Spaniel Ingl&#xea;s"/>
+                <StringItem index="26" value="Cocker Spaniel Americano"/>
+                <StringItem index="27" value="Basset Hound"/>
+                <StringItem index="28" value="Dogue Alem&#xe3;o"/>
+                <StringItem index="29" value="Fila Brasileiro"/>
+                <StringItem index="30" value="Mastim Napolitano"/>
+                <StringItem index="31" value="Cane Corso"/>
+                <StringItem index="32" value="Shar Pei"/>
+                <StringItem index="33" value="Jack Russell Terrier"/>
+                <StringItem index="34" value="West Highland White Terrier"/>
+                <StringItem index="35" value="Boston Terrier"/>
+                <StringItem index="36" value="Fox Terrier"/>
+                <StringItem index="37" value="Setter Irland&#xea;s"/>
+                <StringItem index="38" value="Weimaraner"/>
+                <StringItem index="39" value="Whippet"/>
+                <StringItem index="40" value="Greyhound"/>
+                <StringItem index="41" value="Chow Chow"/>
+                <StringItem index="42" value="Papillon"/>
+                <StringItem index="43" value="Pequin&#xea;s"/>
+                <StringItem index="44" value="Keeshond"/>
+                <StringItem index="45" value="Shiba Inu"/>
+                <StringItem index="46" value="Scottish Terrier"/>
+                <StringItem index="47" value="Cavalier King Charles Spaniel"/>
+                <StringItem index="48" value="Schnauzer Miniatura"/>
+                <StringItem index="49" value="Schnauzer M&#xe9;dio"/>
+                <StringItem index="50" value="Schnauzer Gigante"/>
+                <StringItem index="51" value="Terra Nova"/>
+                <StringItem index="52" value="S&#xe3;o Bernardo"/>
+                <StringItem index="53" value="Collie"/>
+                <StringItem index="54" value="Pastore Maremano-Abruzzese"/>
+                <StringItem index="55" value="C&#xe3;o de Crista Chin&#xea;s"/>
+                <StringItem index="56" value="Basenji"/>
+                <StringItem index="57" value="C&#xe3;o de &#xc1;gua Portugu&#xea;s"/>
+                <StringItem index="58" value="C&#xe3;o de Fila de S&#xe3;o Miguel"/>
+                <StringItem index="59" value="Australian Cattle Dog"/>
+                <StringItem index="60" value="Australian Shepherd"/>
+                <StringItem index="61" value="C&#xe3;o da Serra da Estrela"/>
+                <StringItem index="62" value="C&#xe3;o de Montanha dos Pirineus"/>
+                <StringItem index="63" value="C&#xe3;o de Montanha Bern&#xea;s"/>
+                <StringItem index="64" value="Bloodhound"/>
+                <StringItem index="65" value="Afghan Hound"/>
+                <StringItem index="66" value="Saluki"/>
+                <StringItem index="67" value="Borzoi"/>
+                <StringItem index="68" value="Alano Espanhol"/>
+                <StringItem index="69" value="Kangal"/>
+                <StringItem index="70" value="Kuvasz"/>
+                <StringItem index="71" value="Komondor"/>
+                <StringItem index="72" value="Puli"/>
+                <StringItem index="73" value="Xoloitzcuintli"/>
+                <StringItem index="74" value="Dogo Argentino"/>
+                <StringItem index="75" value="Presa Can&#xe1;rio"/>
+                <StringItem index="76" value="Staffordshire Bull Terrier"/>
+                <StringItem index="77" value="American Pit Bull Terrier"/>
+                <StringItem index="78" value="American Bully"/>
+                <StringItem index="79" value="C&#xe3;o Lobo Tchecoslovaco"/>
+                <StringItem index="80" value="C&#xe3;o Lobo de Saarloos"/>
+                <StringItem index="81" value="Alaskan Malamute"/>
+                <StringItem index="82" value="Eskimo Americano"/>
+                <StringItem index="83" value="Belgian Malinois"/>
+                <StringItem index="84" value="Belgian Tervuren"/>
+                <StringItem index="85" value="Belgian Laekenois"/>
+                <StringItem index="86" value="Belgian Groenendael"/>
+                <StringItem index="87" value="Bearded Collie"/>
+                <StringItem index="88" value="Old English Sheepdog (Bobtail)"/>
+                <StringItem index="89" value="Manchester Terrier"/>
+                <StringItem index="90" value="Miniature Bull Terrier"/>
+                <StringItem index="91" value="Bull Terrier"/>
+                <StringItem index="92" value="Sealyham Terrier"/>
+                <StringItem index="93" value="Bedlington Terrier"/>
+                <StringItem index="94" value="Airedale Terrier"/>
+                <StringItem index="95" value="Irish Terrier"/>
+                <StringItem index="96" value="Lakeland Terrier"/>
+                <StringItem index="97" value="Norfolk Terrier"/>
+                <StringItem index="98" value="Norwich Terrier"/>
+                <StringItem index="99" value="Cairn Terrier"/>
+                <StringItem index="100" value="Dandie Dinmont Terrier"/>
+                <StringItem index="101" value="Soft Coated Wheaten Terrier"/>
+                <StringItem index="102" value="Irish Wolfhound"/>
+                <StringItem index="103" value="Otterhound"/>
+                <StringItem index="104" value="Petit Basset Griffon Vend&#xe9;en"/>
+                <StringItem index="105" value="Grand Basset Griffon Vend&#xe9;en"/>
+                <StringItem index="106" value="Pharaoh Hound"/>
+                <StringItem index="107" value="Rhodesian Ridgeback"/>
+                <StringItem index="108" value="Thai Ridgeback"/>
+                <StringItem index="109" value="Sloughi"/>
+                <StringItem index="110" value="Azawakh"/>
+                <StringItem index="111" value="American Eskimo Dog"/>
+                <StringItem index="112" value="Finnish Spitz"/>
+                <StringItem index="113" value="Finnish Lapphund"/>
+                <StringItem index="114" value="Swedish Vallhund"/>
+                <StringItem index="115" value="Norwegian Elkhound"/>
+                <StringItem index="116" value="Norwegian Buhund"/>
+                <StringItem index="117" value="Norwegian Lundehund"/>
+                <StringItem index="118" value="Icelandic Sheepdog"/>
+                <StringItem index="119" value="Karelian Bear Dog"/>
+                <StringItem index="120" value="Black and Tan Coonhound"/>
+                <StringItem index="121" value="Bluetick Coonhound"/>
+                <StringItem index="122" value="Redbone Coonhound"/>
+                <StringItem index="123" value="Treeing Walker Coonhound"/>
+                <StringItem index="124" value="Plott Hound"/>
+                <StringItem index="125" value="American Foxhound"/>
+                <StringItem index="126" value="English Foxhound"/>
+                <StringItem index="127" value="Harrier"/>
+                <StringItem index="128" value="Hamiltonstovare"/>
+                <StringItem index="129" value="German Shorthaired Pointer"/>
+                <StringItem index="130" value="German Wirehaired Pointer"/>
+                <StringItem index="131" value="English Pointer"/>
+                <StringItem index="132" value="Bracco Italiano"/>
+                <StringItem index="133" value="Spinone Italiano"/>
+                <StringItem index="134" value="Vizsla"/>
+                <StringItem index="135" value="Wirehaired Vizsla"/>
+                <StringItem index="136" value="Brittany Spaniel"/>
+                <StringItem index="137" value="Clumber Spaniel"/>
+                <StringItem index="138" value="Field Spaniel"/>
+                <StringItem index="139" value="Sussex Spaniel"/>
+                <StringItem index="140" value="Welsh Springer Spaniel"/>
+                <StringItem index="141" value="American Water Spaniel"/>
+                <StringItem index="142" value="Boykin Spaniel"/>
+                <StringItem index="143" value="Irish Water Spaniel"/>
+                <StringItem index="144" value="Nova Scotia Duck Tolling Retriever"/>
+                <StringItem index="145" value="Flat-Coated Retriever"/>
+                <StringItem index="146" value="Curly-Coated Retriever"/>
+                <StringItem index="147" value="Chesapeake Bay Retriever"/>
+                <StringItem index="148" value="Kishu Ken"/>
+                <StringItem index="149" value="Shikoku Inu"/>
+                <StringItem index="150" value="Hokkaido Inu"/>
+                <StringItem index="151" value="Kai Ken"/>
+                <StringItem index="152" value="Tosa Inu"/>
+                <StringItem index="153" value="Estrela Mountain Dog"/>
+                <StringItem index="154" value="Appenzeller Sennenhund"/>
+                <StringItem index="155" value="Entlebucher Sennenhund"/>
+                <StringItem index="156" value="Greater Swiss Mountain Dog"/>
+                <StringItem index="157" value="Bernese Mountain Dog"/>
+                <StringItem index="158" value="Leonberger"/>
+                <StringItem index="159" value="Neapolitan Mastiff"/>
+                <StringItem index="160" value="Spanish Mastiff"/>
+                <StringItem index="161" value="Tibetan Mastiff"/>
+                <StringItem index="162" value="Pyrenean Mastiff"/>
+                <StringItem index="163" value="Anatolian Shepherd Dog"/>
+                <StringItem index="164" value="Caucasian Shepherd Dog"/>
+                <StringItem index="165" value="Central Asian Shepherd Dog"/>
+                <StringItem index="166" value="South Russian Ovcharka"/>
+                <StringItem index="167" value="East-European Shepherd"/>
+                <StringItem index="168" value="Kangal"/>
+                <StringItem index="169" value="Boerboel"/>
+                <StringItem index="170" value="Fila de S&#xe3;o Miguel"/>
+                <StringItem index="171" value="Perro de Presa Mallorquin"/>
+                <StringItem index="172" value="Perro de Presa Canario"/>
+                <StringItem index="173" value="Alano Espanhol"/>
+                <StringItem index="174" value="American Bulldog"/>
+                <StringItem index="175" value="Catahoula Leopard Dog"/>
+                <StringItem index="176" value="Black Mouth Cur"/>
+                <StringItem index="177" value="Carolina Dog"/>
+                <StringItem index="178" value="McNab Shepherd"/>
+                <StringItem index="179" value="Stabyhoun"/>
+                <StringItem index="180" value="Markiesje"/>
+                <StringItem index="181" value="Kromfohrl&#xe4;nder"/>
+                <StringItem index="182" value="Schapendoes"/>
+                <StringItem index="183" value="Dutch Shepherd"/>
+                <StringItem index="184" value="Drentsche Patrijshond"/>
+                <StringItem index="185" value="Frisian Water Dog"/>
+                <StringItem index="186" value="Belgian Shepherd Dog"/>
+                <StringItem index="187" value="Pumi"/>
+                <StringItem index="188" value="Mudi"/>
+                <StringItem index="189" value="Hungarian Puli"/>
+                <StringItem index="190" value="Hungarian Kuvasz"/>
+                <StringItem index="191" value="Hungarian Komondor"/>
+                <StringItem index="192" value="Polish Lowland Sheepdog"/>
+                <StringItem index="193" value="Polish Tatra Sheepdog"/>
+                <StringItem index="194" value="Czechoslovakian Wolfdog"/>
+                <StringItem index="195" value="Saarloos Wolfdog"/>
+                <StringItem index="196" value="Greenland Dog"/>
+                <StringItem index="197" value="Canadian Eskimo Dog"/>
+                <StringItem index="198" value="East Siberian Laika"/>
+                <StringItem index="199" value="West Siberian Laika"/>
+                <StringItem index="200" value="Russian-European Laika"/>
+                <StringItem index="201" value="Karelian Bear Dog"/>
+                <StringItem index="202" value="Finnish Lapphund"/>
+                <StringItem index="203" value="Lapponian Herder"/>
+                <StringItem index="204" value="Samoyed"/>
+                <StringItem index="205" value="Yakutian Laika"/>
+                <StringItem index="206" value="Norwegian Lundehund"/>
+                <StringItem index="207" value="Swedish Lapphund"/>
+                <StringItem index="208" value="Swedish Vallhund"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRacaActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblObservacoes">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Observa&#xe7;&#xf5;es:"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txtObservacoes">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnFechar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fechar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFecharActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btEnviar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cadastrar Pet"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btEnviarActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
