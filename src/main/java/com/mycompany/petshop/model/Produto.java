@@ -6,8 +6,10 @@ package com.mycompany.petshop.model;
 
 /**
  *
- * @author Rocha
+ * @author dti
  */
+
+// Classe Produto (projeto Sistema de Agendamentos para PetShop)
 public class Produto {
 
     private static int proximoId = 1;
@@ -19,6 +21,7 @@ public class Produto {
     private String categoria;
     private String descricao;
 
+    // Construtor
     public Produto(String nome, float preco, int quantidade, String categoria, String descricao) {
         this.id = proximoId++;
         this.nome = nome;
@@ -27,7 +30,8 @@ public class Produto {
         this.categoria = categoria;
         this.descricao = descricao;
     }
-
+    
+    // Getters e Setters
     public static int getProximoId() {
         return proximoId;
     }

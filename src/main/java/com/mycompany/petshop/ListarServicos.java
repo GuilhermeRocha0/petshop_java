@@ -131,7 +131,9 @@ public class ListarServicos extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    // Método acionado ao clicar em 'Listar'
+    // Esse método é responsável em requisitar a lista de serviços da classe Persistencia e exibi-los na tela através da tabela
     private void btListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btListarActionPerformed
         javax.swing.table.DefaultTableModel model = (javax.swing.table.DefaultTableModel) tableListar.getModel();
 
@@ -141,7 +143,9 @@ public class ListarServicos extends javax.swing.JInternalFrame {
             model.addRow(new Object[]{s.getNome(), s.getPreco(), s.getTempoEstimado()});
         }
     }//GEN-LAST:event_btListarActionPerformed
-
+    
+    // Método acionado ao clicar em 'Fechar'
+    // Esse método fecha essa página
     private void btnFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_btnFecharActionPerformed

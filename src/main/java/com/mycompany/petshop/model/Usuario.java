@@ -8,6 +8,8 @@ package com.mycompany.petshop.model;
  *
  * @author dti
  */
+
+// Classe Usuario (projeto Sistema de Agendamentos para PetShop)
 public class Usuario {
     
     private static int proximoId = 1;
@@ -18,7 +20,8 @@ public class Usuario {
     private String cpf;
     private String senha;
     private String role;
-
+    
+    // Construtor
     public Usuario(String nome, String email, String cpf, String senha, String role) {
         this.id = proximoId++;
         this.nome = nome;
@@ -27,7 +30,16 @@ public class Usuario {
         this.senha = senha;
         this.role = role;
     }
+    
+    // Getters e Setters
+    public static int getProximoId() {
+        return proximoId;
+    }
 
+    public static void setProximoId(int proximoId) {
+        Usuario.proximoId = proximoId;
+    }
+    
     public int getId() {
         return id;
     }

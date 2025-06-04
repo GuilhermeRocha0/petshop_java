@@ -151,8 +151,11 @@ public class Cadastro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-     public static boolean isCpfValido(String cpf) {
-        if (cpf.length() != 11 || cpf.matches("(\\d)\\1{10}")) return false;
+    // Método para verificar se o CPF é válido
+    public static boolean isCpfValido(String cpf) {
+        if (cpf.length() != 11 || cpf.matches("(\\d)\\1{10}")) {
+            return false;
+        }
 
         try {
             int soma = 0, dig1, dig2;
@@ -160,14 +163,18 @@ public class Cadastro extends javax.swing.JFrame {
                 soma += (cpf.charAt(i) - '0') * (10 - i);
             }
             dig1 = 11 - (soma % 11);
-            if (dig1 >= 10) dig1 = 0;
+            if (dig1 >= 10) {
+                dig1 = 0;
+            }
 
             soma = 0;
             for (int i = 0; i < 10; i++) {
                 soma += (cpf.charAt(i) - '0') * (11 - i);
             }
             dig2 = 11 - (soma % 11);
-            if (dig2 >= 10) dig2 = 0;
+            if (dig2 >= 10) {
+                dig2 = 0;
+            }
 
             return cpf.charAt(9) - '0' == dig1 && cpf.charAt(10) - '0' == dig2;
         } catch (Exception e) {
@@ -175,7 +182,8 @@ public class Cadastro extends javax.swing.JFrame {
         }
     }
 
-    
+    // Método acionada ao clicar em 'Enviar'
+    // Esse método verifica os dados inseridos pelo usuário e se forem válidos, é requisitado o método cadastrar() da classe Persistencia
     private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
         String nome = txtNome.getText().trim();
         String email = txtEmail.getText().trim();
@@ -188,21 +196,24 @@ public class Cadastro extends javax.swing.JFrame {
             return;
         }
 
+        // Chama o método isCpfValido para verificar se o CPF é valido 
         if (!isCpfValido(cpf)) {
             JOptionPane.showMessageDialog(this, "CPF inválido.");
             return;
         }
 
+        // Verificar se ambas as senhas coincidem, para não ocorrer erros no momento de definir a senha
         if (!senha.equals(confirmarSenha)) {
             JOptionPane.showMessageDialog(this, "As senhas não coincidem.");
             return;
         }
-
+        
+        // Utiliza o método buscarPorEmail() da classe Persistencia para verificar se já existe um usuário com esse email
         if (Persistencia.buscarPorEmail(email) != null || Persistencia.buscarPorCpf(cpf) != null) {
             JOptionPane.showMessageDialog(this, "Usuário já cadastrado com este e-mail ou CPF.");
             return;
         }
-
+        
         Usuario novo = new Usuario(nome, email, cpf, senha, "CUSTOMER");
         Persistencia.cadastrar(novo);
         JOptionPane.showMessageDialog(this, "Usuário cadastrado com sucesso!");
@@ -212,7 +223,7 @@ public class Cadastro extends javax.swing.JFrame {
         txtCPF.setText("");
         txtSenha.setText("");
         txtConfirmarSenha.setText("");
-        
+
         setVisible(false);
         new Login().setVisible(true);
     }//GEN-LAST:event_btEnviarActionPerformed

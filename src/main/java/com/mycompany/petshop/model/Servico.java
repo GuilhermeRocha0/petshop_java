@@ -9,6 +9,7 @@ package com.mycompany.petshop.model;
  * @author dti
  */
 
+// Classe Servico (projeto Sistema de Agendamentos para PetShop)
 public class Servico {
 
     private static int proximoId = 1;
@@ -17,14 +18,16 @@ public class Servico {
     private String nome;
     private float preco;
     private int tempoEstimado; // em minutos
-
+    
+    // Construtor
     public Servico(String nome, float preco, int tempoEstimado) {
         this.id = proximoId++;
         this.nome = nome;
         this.preco = preco;
         this.tempoEstimado = tempoEstimado;
     }
-
+    
+    // Getters e Setters
     public static int getProximoId() {
         return proximoId;
     }
@@ -64,8 +67,6 @@ public class Servico {
     public void setTempoEstimado(int tempoEstimado) {
         this.tempoEstimado = tempoEstimado;
     }
-
-    
 
     @Override
     public String toString() {

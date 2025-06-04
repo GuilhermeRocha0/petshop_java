@@ -134,7 +134,9 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    // Método acionada ao clicar no botão enviar
+    // Esse método requisita a função autenticar() da Classe Persitencia para autenticar o usuário
     private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
         String email = txtEmail.getText().trim();
         String senha = new String(txtSenha.getPassword());
@@ -152,7 +154,8 @@ public class Login extends javax.swing.JFrame {
         txtEmail.setText("");
         txtSenha.setText("");
     }//GEN-LAST:event_btEnviarActionPerformed
-
+    
+    // Método acionada ao clicar no botão 'Cadastre-se Aqui', redirecionando o usuário para Cadastro.java
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         setVisible(false);
         new Cadastro().setVisible(true);

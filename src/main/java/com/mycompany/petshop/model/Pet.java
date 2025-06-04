@@ -8,6 +8,8 @@ package com.mycompany.petshop.model;
  *
  * @author dti
  */
+
+// Classe Pet (projeto Sistema de Agendamentos para PetShop)
 public class Pet {
     private static int proximoId = 1;
 
@@ -18,7 +20,8 @@ public class Pet {
     private String idade;
     private String raca;
     private String observacoes;
-
+    
+    // Construtor
     public Pet(int usuarioId, String nome, String porte, String idade, String raca, String observacoes) {
         this.id = proximoId++;
         this.usuarioId = usuarioId;
@@ -29,6 +32,7 @@ public class Pet {
         this.observacoes = observacoes;
     }
 
+    // Getters e Setters
     public static int getProximoId() {
         return proximoId;
     }
@@ -92,7 +96,6 @@ public class Pet {
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
     }
-
     
     @Override
     public String toString() {

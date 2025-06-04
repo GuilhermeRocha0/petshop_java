@@ -9,8 +9,10 @@ import java.util.Date;
 
 /**
  *
- * @author Rocha
+ * @author dti
  */
+
+// Classe Agendamento (projeto Sistema de Agendamentos para PetShop)
 public class Agendamento {
         
     private static int proximoId = 1;
@@ -21,7 +23,8 @@ public class Agendamento {
     private Date dataHora;  // Data e hora do agendamento
     private int tempoTotal; // Em minutos
     private double valorTotal;
-
+    
+    // Construtor
     public Agendamento(int usuarioId, int petId, ArrayList<Servico> servicos, Date dataHora) {
         this.id = proximoId++;
         this.usuarioId = usuarioId;
@@ -31,7 +34,8 @@ public class Agendamento {
         this.tempoTotal = calcularTempoTotal();
         this.valorTotal = calcularValorTotal();
     }
-
+    
+    // Função para calcular o tempo estimado total dos serviços no agendamento
     private int calcularTempoTotal() {
         int total = 0;
         for (Servico s : servicos) {
@@ -40,6 +44,7 @@ public class Agendamento {
         return total;
     }
 
+    // Função para cacular o valor total dos serviços no agendamento
     private double calcularValorTotal() {
         double total = 0.0;
         for (Servico s : servicos) {
@@ -47,7 +52,8 @@ public class Agendamento {
         }
         return total;
     }
-
+    
+    // Getters e Setters
     public static int getProximoId() {
         return proximoId;
     }

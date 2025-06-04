@@ -33,7 +33,8 @@ public class CadastrarAgendamento extends javax.swing.JInternalFrame {
         carregarPetsDoUsuario(this.usuarioLogado);
         carregarServicos();
     }
-
+    
+    // Método para buscar a lista de pets do usuário da lista de Pets
     private void carregarPetsDoUsuario(Usuario usuarioLogado) {
         txtPet.removeAllItems();
         petsDoUsuario = new ArrayList<>();  // limpa lista
@@ -45,7 +46,8 @@ public class CadastrarAgendamento extends javax.swing.JInternalFrame {
             }
         }
     }
-
+    
+    // Método para buscar a lista de Serviços
     private void carregarServicos() {
         DefaultListModel<String> modelo = new DefaultListModel<>();
 
@@ -55,7 +57,8 @@ public class CadastrarAgendamento extends javax.swing.JInternalFrame {
 
         txtServicos.setModel(modelo);
     }
-
+    
+    // Método para verificar se as datas são a mesma
     private boolean isMesmaData(java.util.Date d1, java.util.Date d2) {
         java.util.Calendar c1 = java.util.Calendar.getInstance();
         java.util.Calendar c2 = java.util.Calendar.getInstance();
@@ -220,11 +223,15 @@ public class CadastrarAgendamento extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    // Método acionado ao clicar em 'Fechar'
+    // Esse método fecha essa página
     private void btnFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_btnFecharActionPerformed
-
+    
+    // Método acionado ao clicar em 'Enviar'
+    // Esse método é responsável em adquirir os dados inseridos pelo usuário, valida-los, e se forem válidos, chamar o método cadastrarAgendamento() de Persistencia para salvar o agendamento
     private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
         java.util.Date dataSelecionada = txtData.getDate();
         java.util.Date horaSelecionada = (java.util.Date) txtHora.getValue();

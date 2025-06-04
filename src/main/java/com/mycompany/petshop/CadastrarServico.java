@@ -136,7 +136,10 @@ public class CadastrarServico extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    
+    // Método acionado ao clicar em 'Enviar'
+    // Esse método é responsável em adquirir os dados inseridos pelo usuário, valida-los, e se forem válidos, chamar o método cadastrarServico() de Persistencia para salvar o serviço
     private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviarActionPerformed
         String nome = txtNome.getText().trim();
 
@@ -167,6 +170,8 @@ public class CadastrarServico extends javax.swing.JInternalFrame {
         lblTempoEstimado.setValue(0);
     }//GEN-LAST:event_btEnviarActionPerformed
 
+    // Método acionado ao clicar em 'Fechar'
+    // Esse método fecha essa página
     private void btnFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_btnFecharActionPerformed

@@ -167,7 +167,9 @@ public class CadastrarProduto extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    // Método acionado ao clicar em 'Enviar'
+    // Esse método é responsável em adquirir os dados inseridos pelo usuário, valida-los, e se forem válidos, chamar o método cadastrarProduto() de Persistencia para salvar o produto
     private void btEnviar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEnviar1ActionPerformed
         String nome = txtNome1.getText();
         float preco = ((Number) txtPreco1.getValue()).floatValue();
@@ -191,7 +193,9 @@ public class CadastrarProduto extends javax.swing.JInternalFrame {
     private void txtCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCategoriaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCategoriaActionPerformed
-
+    
+    // Método acionado ao clicar em 'Fechar'
+    // Esse método fecha essa página
     private void btnFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFecharActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_btnFecharActionPerformed
